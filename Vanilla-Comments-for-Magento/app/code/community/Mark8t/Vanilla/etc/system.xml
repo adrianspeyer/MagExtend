@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<!--
+/**
+ *
+ * Adds Vanilla Forums comments to all product page.
+ *
+ * @category    Vanilla
+ * @package     Mag_Van
+ * @copyright   Copyright (c) 2014 by Adrian Speyer
+ * @license     GPL 2
+ */
+ -->
+<config>
+    <tabs>
+        <mark8t translate="label">
+            <label>Mark8t Extensions</label>
+            <sort_order>800</sort_order>
+        </mark8t>
+    </tabs>
+    <sections>
+        <vanilla translate="label">
+            <class>separator-top</class>
+            <label>Vanilla Comments </label>
+            <tab>mark8t</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>400</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label">
+                    <label>General Configuration</label>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <vanilla_forum_url translate="label">
+                            <label>Vanilla Forum Url</label>
+                            <comment> Enter the location of your Vanilla Forums (make sure to include http://). </comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </vanilla_forum_url>
+						    <vanilla_discussion_id translate="label">
+                            <label>Discussion (Optional Setting)</label>
+                            <comment> Attach comments to a specific Vanilla DiscussionID.(Leave blank for default).</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </vanilla_discussion_id>
+						    <vanilla_category_id translate="label">
+                            <label>Category (Optional Setting)</label>
+                            <comment> Attach comments in a specific Vanilla CategoryID.(Leave blank for default).</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </vanilla_category_id>
+						<vanilla_debug_mode>
+                            <label>Debug mode</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </vanilla_debug_mode>
+                    </fields>
+                </general>
+            </groups>
+        </vanilla>
+    </sections>
+</config>

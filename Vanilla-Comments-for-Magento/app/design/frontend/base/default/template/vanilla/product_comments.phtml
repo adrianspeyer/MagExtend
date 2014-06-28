@@ -1,0 +1,39 @@
+<?php
+/**
+ *
+ * Adds Vanilla Forums comments to all product page.
+ *
+ * @category    Vanilla
+ * @package     Mag_Van
+ * @copyright   Copyright (c) 2014 by Adrian Speyer
+ * @license     GPL 2
+ */
+
+?>
+
+<?php if ($this->isVanillaEnabled()) : ?>
+		
+<div id="vanilla-comments"></div>
+    <script type="text/javascript">
+        //<![CDATA[
+var vanilla_forum_url = '<?php echo $this->getVanillaForum(); ?>'; // The full http url & path to your vanilla forum
+var vanilla_identifier = '<?php echo $this->getProductUrl(); ?>'; // Your unique identifier for the content being commented on
+
+/*** Optional Settings: Ignore if you like ***/
+var vanilla_discussion_id = '<?php echo $this->getVanillaForumDID(); ?>'; // Attach this page of comments to a specific Vanilla DiscussionID.
+var vanilla_category_id = '<?php echo $this->getVanillaForumCID(); ?>'; // Create this discussion in a specific Vanilla CategoryID.
+
+/*** DON'T EDIT BELOW THIS LINE ***/
+(function() {
+   var vanilla = document.createElement('script');
+   vanilla.type = 'text/javascript';
+   var timestamp = new Date().getTime();
+   vanilla.src = vanilla_forum_url + '/js/embed.js';
+   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(vanilla);
+})();
+ //]]>
+    </script>
+<?php endif; ?>
+<noscript>Please enable JavaScript to view the <a href="http://vanillaforums.com/?ref_noscript">comments powered by Vanilla.</a></noscript>
+<div class="vanilla-credit"><a class="vanilla-anchor" href="http://vanillaforums.com">Comments by <span class="vanilla-logo">Vanilla  Forum Software</span></a></div>
+		

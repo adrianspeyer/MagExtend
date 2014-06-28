@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<!--
+/**
+ *
+ * Adds Vanilla Forums comments to all product page.
+ *
+ * @category    Vanilla
+ * @package     Mag_Van
+ * @copyright   Copyright (c) 2014 by Adrian Speyer
+ * @license     GPL 2
+ */
+ -->
+<config>
+    <modules>
+        <Mark8t_Vanilla>
+            <version>1.0.0</version>
+        </Mark8t_Vanilla>
+    </modules>
+    <adminhtml>
+        <acl>
+            <resources>
+                <all>
+                    <title>Allow Everything</title>
+                </all>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <vanilla translate="title" >
+                                            <title>Vanilla Comments Settings</title>
+                                            <sort_order>80</sort_order>
+                                        </vanilla>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+    <frontend>
+        <layout>
+            <updates>
+                <vanilla>
+                    <file>vanilla.xml</file>
+                </vanilla>
+            </updates>
+        </layout>
+    </frontend>
+    <global>
+        <resources>
+            <vanilla_setup>
+                <setup>
+                    <module>Mark8t_Vanilla</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </vanilla_setup>
+            <vanilla_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </vanilla_write>
+            <vanilla_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </vanilla_read>
+        </resources>
+        <blocks>
+            <vanilla>
+                <class>Mark8t_Vanilla_Block</class>
+            </vanilla>
+        </blocks>
+        <models>
+            <vanilla>
+                <class>Mark8t_Vanilla_Model</class>
+                <resourceModel>vanilla_mysql4</resourceModel>
+            </vanilla>
+            <vanilla_mysql4>
+                <class>Mark8t_Vanilla_Model_Mysql4</class>
+            </vanilla_mysql4>
+        </models>
+        <helpers>
+            <vanilla>
+                <class>Mark8t_Vanilla_Helper</class>
+            </vanilla>
+        </helpers>
+    </global>
+    <default>
+        <vanilla>
+            <general>
+                <vanilla_debug_mode>0</vanilla_debug_mode>
+            </general>
+        </vanilla>
+    </default>
+</config>
