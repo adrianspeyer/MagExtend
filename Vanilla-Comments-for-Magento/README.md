@@ -11,3 +11,5 @@ Adds Vanilla comments to Magento e-commerce shop
 5. Celebrate!
 
 Don't have a Vanilla Forum? Get one at http://vanillaforums.com/plans
+
+This is not an officially released Vanilla Forums plugin. Please test and use at your own risk.

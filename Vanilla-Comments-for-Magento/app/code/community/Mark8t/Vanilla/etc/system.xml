@@ -30,6 +30,19 @@
             <groups>
                 <general translate="label">
                     <label>General Configuration</label>
+					<comment>
+					<![CDATA[
+					<h3>Use Vanilla Comments with your Magento Store</h3>
+					<b>Steps to get working</b>
+					<p>------</p>
+					<ul>
+					<li>1. Make sure you have a Vanilla Forum. If you don't have one, get one from  <a href="http://vanillaforums.com" target="_blank">vanillaforums.com</a> .<li>
+					<li>2. Enable Comment embedding in your Vanilla Fourms dashboard.</li>
+					<li>3. Add Vanilla Forum url in configuration below.</li>
+					<li>4. Decide if you want comments to go to specific discussion or specific category. <b>You may leave it blank for default behaviour</b>.</li>
+					</ul>
+					]]>
+					</comment>
                     <sort_order>1</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>

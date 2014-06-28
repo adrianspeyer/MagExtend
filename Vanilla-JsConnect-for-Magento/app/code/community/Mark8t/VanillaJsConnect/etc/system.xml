@@ -1,0 +1,73 @@
+<?xml version="1.0"?>					
+<config>
+    <tabs>
+        <mark8t translate="label">
+            <label>Mark8t Extensions</label>
+            <sort_order>900</sort_order>
+        </mark8t>
+    </tabs>
+    <sections>
+        <vanillajsconnect translate="label">
+            <class>separator-top</class>
+            <label>Vanilla JsConnect</label>
+            <tab>mark8t</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>400</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label">
+                    <label>General Configuration</label>
+					<comment>
+					<![CDATA[
+					<h3>Connect your Vanilla Forum to Magento with jsConnect.</h3>
+					<b>Steps to get working</b>
+					<p>------</p>
+					<ul>
+					<li>1. Make sure you have a Vanilla Forum. If you don't have one, get one from  <a href="http://vanillaforums.com" target="_blank">vanillaforums.com</a> .</li>
+					<li>2. Enable the jsConnect Vanilla Plugin. If self-hosting, get it from <a href="http://vanillaforums.org/addon/jsconnect-plugin" target="_blank">here</a>.</li>
+					<li>3. Setup a Connection in Vanilla</li>
+					<ul>
+						<li>a. Generate a secret and key at the bottom ( you will need these later)</li>
+						<li>b. SiteName: Give name that is clear for sign in on the forum.</li>
+						<li>c. For Authenticate use: http://yourmagentosite.com/vanillajsconnect</li>
+						<li>d. For SignIn Url use: http://yourmagentosite.com/index.php/customer/account/login/</li>
+						<li>e. You should keep register url and signout url empty</li>
+						<li>f. Leave unchecked "Make this connection your default signin method."</li>
+					</ul>
+					<li>4. In Vanilla Forums backend go to Users>Registration: change method to Connect.</li>
+					<li>5. Copy and past secret and key into in Mark8t Vanilla jsConnect </li>
+					</ul>
+					]]>
+					</comment>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+					<fields>
+						<client_id>
+                            <label>Client ID</label>
+							 <comment>Generate this in Vanilla Forums jsConnect Plugin</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </client_id>
+
+                        <client_secret>
+                            <label>Client Secret</label>
+							<comment>Generate this in Vanilla Forums jsConnect Plugin</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </client_secret>
+                    </fields>
+                </general>
+            </groups>
+        </vanillajsconnect>
+    </sections>
+</config>               

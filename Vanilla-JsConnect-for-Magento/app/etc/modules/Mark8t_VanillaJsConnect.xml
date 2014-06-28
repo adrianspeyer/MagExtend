@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mark8t_VanillaJsConnect>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Mark8t_VanillaJsConnect>
+    </modules>
+</config>
