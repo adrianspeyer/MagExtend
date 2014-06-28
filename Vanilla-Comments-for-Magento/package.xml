@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package>
+    <name>Mark8t_Vanilla</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="@license http://www.gnu.org/licenses/gpl-2.0.html">GPL v2</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>This is a GPL released Extension that allows you to use Vanilla Comments in your Magento shop</summary>
+    <description>Add Vanilla Comments to your Magento shop. You can also specify which discussion or category the discussion will appear.</description>
+    <notes>Initial Release.&#xD;
+Source Code: https://github.com/adriansonline/MagExtend/tree/master/Vanilla-Comments-for-Magento</notes>
+    <authors><author><name>Adrian Speyer</name><user>AdrianSpeyer</user><email>adriansprojects+magento@gmail.com</email></author></authors>
+    <date>2014-06-28</date>
+    <time>04:43:44</time>
+    <contents><target name="mage"><dir name="."><dir name="app"><dir name="code"><dir name="community"><dir name="Mark8t"><dir name="Vanilla"><dir name="Block"><dir name="Product"><file name="Comments.php" hash="0f0a32cc1b6d1180bebef9d54d8c4b35"/></dir></dir><dir name="Helper"><file name="Data.php" hash="4866c9bf0c206cbe7b6f360f322a2834"/></dir><dir name="etc"><file name="config.xml" hash="be2590f0da36414efd309b65e10e17c4"/><file name="system.xml" hash="2dd850240f0066684f0810fdcd8ce6a1"/></dir><dir name="sql"><dir name="vanilla_setup"><file name="mysql4-install-1.0.0.php" hash="d6338d5aaf256f8bce8b516a6a9d7e44"/></dir></dir></dir></dir></dir></dir><dir name="design"><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><dir name="vanilla"><file name="product_comments.phtml" hash="c23b0b1913401c68928940f002133387"/></dir></dir><dir name="layout"><file name="vanilla.xml" hash="ba616a62b4006653dd67e5ce22c92b1a"/></dir></dir></dir></dir></dir><dir name="etc"><dir name="modules"><file name="Mark8t_Vanilla.xml" hash="b3889565042a6b454f96c136debed962"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
