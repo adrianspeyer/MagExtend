@@ -1,7 +1,7 @@
 Mark8t Vanilla jsConnect
 ------
 Extension which allows you to connect your Vanilla Forum to Magento with jsConnect.
-Refactor of Vanilla Connect by https://github.com/thebod
+A fork of sorts of Vanilla Connect created by https://github.com/thebod
 
 Steps to get working
 ------
