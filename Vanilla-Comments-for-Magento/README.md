@@ -1,5 +1,5 @@
-=Vanilla Comments for Magento=
-=========================================
+Vanilla Comments for Magento
+========================================
 Adds Vanilla comments to Magento e-commerce shop
 
 5 Step setup
