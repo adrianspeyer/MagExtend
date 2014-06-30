@@ -2,7 +2,7 @@
 /**
  * Mark8t VanillaJsConnect
  *
- * Adds jsconnect support for mMgento so you can login on vanilla with your magento account
+ * Adds jsconnect support for magento so you can login onto vanilla forums with your magento account
  *
  * @author Bastian Ike, modifications by Adrian Speyer
  * @license http://creativecommons.org/licenses/by/3.0/ CC-BY 3.0
