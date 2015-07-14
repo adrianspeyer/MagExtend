@@ -8,12 +8,12 @@ Steps to get working
 1. Make sure you have a Vanilla Forum. If you don't have one, get one from  http://vanillaforums.com.
 2. Enable the jsConnect Vanilla Plugin. If self-hosting, get it from: (http://vanillaforums.org/addon/jsconnect-plugin)
 3. Setup a Connection in Vanilla
-    a. Generate a secret and key at the bottom ( you will need these later)
-    b. SiteName: Give name that is clear for sign in on the forum.
-    c. For Authenticate use: http://yourmagentosite.com/vanillajsconnect
-    d. For SignIn Url use: http://yourmagentosite.com/index.php/customer/account/login/
-    e. Key register url and signout url empty
-    f. Leave unchecked "Make this connection your default signin method."
+    * Generate a secret and key at the bottom ( you will need these later)
+    * SiteName: Give name that is clear for sign in on the forum.
+    * For Authenticate use: http://yourmagentosite.com/vanillajsconnect
+    * For SignIn Url use: http://yourmagentosite.com/index.php/customer/account/login/
+    * Key register url and signout url empty
+    * Leave unchecked "Make this connection your default signin method."
 4. In Vanilla Forums backend go to Users>Registration: change method to Connect
 5. Copy and past secret and key into in Mark8t Vanilla jsConnect 
 
