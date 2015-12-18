@@ -21,4 +21,4 @@ Steps to get working
 
 This is not an officially released Vanilla Forums plugin. Please test and use at your own risk.
 
-As origianl, released under http://creativecommons.org/licenses/by/3.0/
+As original, released under http://creativecommons.org/licenses/by/3.0/
